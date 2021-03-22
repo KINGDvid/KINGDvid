@@ -77,6 +77,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Scatterplot" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/22/Scatterplot/" class="article-date">
+  <time class="dt-published" datetime="2021-03-22T06:31:57.000Z" itemprop="datePublished">2021-03-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/22/Scatterplot/">Scatterplot</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="install-packages-“ggplot2”"><a href="#install-packages-“ggplot2”" class="headerlink" title="install.packages(“ggplot2”)"></a>install.packages(“ggplot2”)</h1><h1 id="load-package-and-data"><a href="#load-package-and-data" class="headerlink" title="load package and data"></a>load package and data</h1><p>options(scipen=999)  # turn-off scientific notation like 1e+48<br>library(ggplot2)<br>theme_set(theme_bw())  # pre-set the bw theme.<br>data(“midwest”, package = “ggplot2”)</p>
+<h1 id="midwest-lt-read-csv-“http-goo-gl-G1K41K-quot-bkup-data-source"><a href="#midwest-lt-read-csv-“http-goo-gl-G1K41K-quot-bkup-data-source" class="headerlink" title="midwest &lt;- read.csv(“http://goo.gl/G1K41K&quot;)  # bkup data source"></a>midwest &lt;- read.csv(“<a target="_blank" rel="noopener" href="http://goo.gl/G1K41K&quot;">http://goo.gl/G1K41K&quot;</a>)  # bkup data source</h1><h1 id="Scatterplot"><a href="#Scatterplot" class="headerlink" title="Scatterplot"></a>Scatterplot</h1><p>gg &lt;- ggplot(midwest, aes(x=area, y=poptotal)) +<br>  geom_point(aes(col=state, size=popdensity)) +<br>  geom_smooth(method=”loess”, se=F) +<br>  xlim(c(0, 0.1)) +<br>  ylim(c(0, 500000)) +<br>  labs(subtitle=”Area Vs Population”,<br>       y=”Population”,<br>       x=”Area”,<br>       title=”Scatterplot”,<br>       caption = “Source: midwest”)</p>
+<p>plot(gg)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kingdvid.github.io/2021/03/22/Scatterplot/" data-id="ckmk7qxcl00008cu879m8ddis" data-title="Scatterplot" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-R-programming" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/03/22/R-programming/" class="article-date">
@@ -295,6 +336,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/03/22/Scatterplot/">Scatterplot</a>
+          </li>
         
           <li>
             <a href="/2021/03/22/R-programming/">R programming</a>
