@@ -77,6 +77,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-temp2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/22/temp2/" class="article-date">
+  <time class="dt-published" datetime="2021-03-22T02:24:40.000Z" itemprop="datePublished">2021-03-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/22/temp2/">temp2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="C-코드"><a href="#C-코드" class="headerlink" title="C++ 코드"></a>C++ 코드</h2><p>void aFunction(int* a)<br>{<br>    cout &lt;&lt; *a &lt;&lt; endl;<br>}</p>
+<p>int main()<br>{<br>    int a = 10;<br>    const int* iVariable = &a;</p>
+<pre><code>aFunction(const_cast&lt;int*&gt;(iVariable)); 
+</code></pre>
+<p>/<em>Since the function designer did not specify the parameter as const int</em>, we can strip the const-ness of the pointer iVariable to pass it into the function.<br>Make sure that the function will not modify the value. */</p>
+<pre><code>return 0;
+</code></pre>
+<p>} </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kingdvid.github.io/2021/03/22/temp2/" data-id="ckmjywm2900001ku87vjeea4e" data-title="temp2" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-temp" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/03/22/temp/" class="article-date">
@@ -202,6 +248,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/03/22/temp2/">temp2</a>
+          </li>
         
           <li>
             <a href="/2021/03/22/temp/">temp</a>
